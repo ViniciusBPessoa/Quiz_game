@@ -16,12 +16,6 @@ numero_perguntas = len(valores_premiacoes) - 1  # quntas perguntas devem ser car
 
 pygame.init()
 
-musica = pygame.mixer.music.load('musicas/Musica.mp3')
-pygame.mixer.music.play(-1)
-
-efeito_acerto = pygame.mixer.Sound('musicas/acerto.wav')
-efeito_erro = pygame.mixer.Sound('musicas/erro.wav')
-
 while True:  # loop principal
 
     if controlador == 0:  # menu inicial
@@ -172,15 +166,14 @@ while True:  # loop principal
 
             if resposta == valor.loc['Resposta']:
                 acertos += 1
-                efeito_acerto.play()  # toca sons caso o usuario acerte
+                 # toca sons caso o usuario acerte
 
             elif resposta == 5:
-                efeito_acerto.play()  # toca sons caso o usuario acerte
+                # toca sons caso o usuario acerte
                 break
 
             else:
-                parar = False
-                efeito_erro.play()  # toca caso o usuario erre
+                parar = False  # toca caso o usuario erre
 
                 correta = valor.loc["Resposta"]
 
@@ -314,7 +307,6 @@ while True:  # loop principal
 
         elif resposta == 4:
             controlador = 0
-
 linha(27)
 print("\033[31mObrigado por ter jogado!!!\033[m")
 linha(27)
