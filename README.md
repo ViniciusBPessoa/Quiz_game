@@ -1,2 +1,2 @@
-# Quiz_game
- Quiz_game
+# Game_quiz_text
+ Game_quiz_text
