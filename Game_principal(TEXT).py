@@ -318,3 +318,5 @@ while True:  # loop principal
 linha(27)
 print("\033[31mObrigado por ter jogado!!!\033[m")
 linha(27)
+
+print("test")
